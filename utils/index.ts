@@ -52,7 +52,8 @@ export async function fetchCars(filters: FilterProps) {
     "x-rapidapi-key": "fac95516cemshef8c62bd2f9e27cp10f2dfjsncdff9606ae91",
     "x-rapidapi-host": "cars-by-api-ninjas.p.rapidapi.com",
   };
-  const url = `https://cars-by-api-ninjas.p.rapidapi.com/v1/cars?make=${manufacturer}&year=${year}&model=${model}&limit=${limit}&fuel_type=${fuel}`;
+  const url = `https://cars-by-api-ninjas.p.rapidapi.com/v1/cars?model=${model}`;
+  //cars-by-api-ninjas.p.rapidapi.com/v1/cars?model=corolla
   // Set the required headers for the API request
   const response = await fetch(url, {
     headers: headers,
